@@ -4,7 +4,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class MainBean {
-    public void getMBThirdBean(MBThirdBean mbThirdBean){
+
+    private final MBThirdBean mbThirdBean;
+
+    public MainBean(MBThirdBean mbThirdBean) {
+        this.mbThirdBean = mbThirdBean;
         mbThirdBean.message();
     }
+
 }
