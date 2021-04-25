@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 import java.util.Arrays;
 
-@ComponentScan("com.training.inqoo.springcorelab.package2")
+@ComponentScan("com.training.inqoo.springcorelab.*")
 @SpringBootApplication
 public class SpringCoreLabApplication {
 
