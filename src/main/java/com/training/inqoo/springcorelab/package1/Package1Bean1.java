@@ -1,8 +1,8 @@
 package com.training.inqoo.springcorelab.package1;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 
 
-@Component
+@Controller
 public class Package1Bean1 {
 }
