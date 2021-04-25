@@ -1,6 +1,5 @@
 package com.training.inqoo.springcorelab;
 
-import com.sun.tools.javac.Main;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 import java.util.Arrays;
 
-@ComponentScan(basePackages = "com.training.inqoo.springcorelab.*")
+@ComponentScan(basePackages = "com.training.inqoo.*")
 @SpringBootApplication
 public class SpringCoreLabApplication {
 
@@ -18,10 +17,6 @@ public class SpringCoreLabApplication {
         SpringApplication.run(SpringCoreLabApplication.class, args);
     }
 
-    @Bean
-    MainBean mainBean(){
-        return new MainBean();
-    }
 
     @Bean
     public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
